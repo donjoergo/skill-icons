@@ -18,6 +18,8 @@
   - [error on line 6 at column 9: XML declaration allowed only at the start of the document](#error-on-line-6-at-column-9-xml-declaration-allowed-only-at-the-start-of-the-document)
   - [Icons not visible/strangely overlapping](#icons-not-visiblestrangely-overlapping)
   - [Beware when using defs and minifyer](#beware-when-using-defs-and-minifyer)
+- [Icons List](#icons-list)
+- [💖 Support the Project](#-support-the-project)
 
 # Example
 
@@ -129,6 +131,7 @@ To fix it, remove this line of code in the icon's svg file:
 ``` svg
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 ```
+
 ## Icons not visible/strangely overlapping
 
 When the icon is missing attributes like `height` or `width` this can have strange effects when the `translate` is applied.
@@ -141,13 +144,13 @@ Example of a correct svg:
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
 ```
 
-
 ## Beware when using defs and minifyer
 
 Minifying the icons can lead to the ids of defs (like gradients, etc.) being shortened as well. This could mean, that the defs are named like `a`, `ba`, `c` and so on. When requesting multiple icons (because of the structure explained in [here](#how-it-works)) this could lead to collisions in ids (e.g. multiple defs named `a`).
 
 Recommendation: After minfiying manually rename defs like `<icon_name>` (e.g. `codex`). This way, when requesting multiple icons, the id will still be unique.
 
+# Icons List
 
 | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon |
 | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: |
